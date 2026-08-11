@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct Card: View {
+    
+    let image: String
+    //let cardColor: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            RoundedRectangle(cornerRadius: 25)
+                .fill(.yellow)
+                .frame(width: 360, height: 509)
+                .scaledToFit()
+            Image(image)
+                .resizable()
+                //.scaledToFill()
+                //.frame(width: 400, height: 300)
+                //.cornerRadius(30)
+                .clipShape(.rect(cornerRadius: 25))
+                .frame(width: 330, height: 466)
+        }
+        
+        
     }
 }
 
 #Preview {
-    Card()
+    Card(image: "ikea")
 }
