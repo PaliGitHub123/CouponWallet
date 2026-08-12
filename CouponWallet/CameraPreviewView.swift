@@ -2,7 +2,7 @@
 //  CameraPreviewPage.swift
 //  CouponWallet
 //
-//  Created by Pál Danyi on 24.07.26.
+//copied code from: https://scanbot.io/techblog/vndocumentcameraviewcontroller-ios-document-scanner-tutorial/
 //
 
 import SwiftUI
@@ -23,12 +23,11 @@ struct CameraPreviewView: View {
             } else {
                 Text("No document scanned yet")
                     .foregroundColor(.gray)
+                Button("Scan Document") {
+                    isShowingScanner = true
+                }
+                .buttonStyle(.borderedProminent)
             }
-
-            Button("Scan Document") {
-                isShowingScanner = true
-            }
-            .buttonStyle(.borderedProminent)
         }
         .padding()
         .sheet(isPresented: $isShowingScanner) {

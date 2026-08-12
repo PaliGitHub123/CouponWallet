@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Card: View {
     
-    let image: UIImage
+    @State var image: UIImage
     //let cardColor: String
     
     var body: some View {
