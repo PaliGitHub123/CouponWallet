@@ -32,7 +32,7 @@ struct CameraPreviewView: View {
         }
         .padding()
         .sheet(isPresented: $isShowingScanner) {
-            DocumentScannerView(scannedImage: $scannedImage)
+            DocumentScanner(scannedImage: $scannedImage)
         }
     }
 }

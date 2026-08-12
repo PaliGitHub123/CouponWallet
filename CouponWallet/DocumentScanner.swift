@@ -8,7 +8,7 @@
 import SwiftUI
 import VisionKit
 
-struct DocumentScannerView: UIViewControllerRepresentable {
+struct DocumentScanner: UIViewControllerRepresentable {
     @Binding var scannedImage: UIImage?
     @Environment(\.dismiss) var dismiss
     
