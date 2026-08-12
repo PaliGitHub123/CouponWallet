@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Card: View {
     
-    let image: String
+    let image: UIImage
     //let cardColor: String
     
     var body: some View {
@@ -18,7 +18,7 @@ struct Card: View {
                 .fill(.yellow)
                 .frame(width: 360, height: 509)
                 .scaledToFit()
-            Image(image)
+            Image(uiImage: image)
                 .resizable()
                 //.scaledToFill()
                 //.frame(width: 400, height: 300)
@@ -26,11 +26,9 @@ struct Card: View {
                 .clipShape(.rect(cornerRadius: 25))
                 .frame(width: 330, height: 466)
         }
-        
-        
     }
 }
 
-#Preview {
+/*#Preview {
     Card(image: "ikea")
-}
+}*/

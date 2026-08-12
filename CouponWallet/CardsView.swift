@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CardsView: View {
+    
+    
     var body: some View {
         ScrollView(.vertical){
             VStack{
-                Card(image: "ikea")
-                Card(image: "ikea")
             }
         }
         
