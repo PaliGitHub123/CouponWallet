@@ -2,7 +2,7 @@
 //  DocumentScanner.swift
 //  CouponWallet
 //
-//  Created by Pál Danyi on 13.08.26.
+//  copied code from: https://scanbot.io/techblog/vndocumentcameraviewcontroller-ios-document-scanner-tutorial/
 //
 
 import SwiftUI
