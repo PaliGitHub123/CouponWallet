@@ -14,7 +14,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Camera", systemImage: "camera")
                 }
-           CardsView()
+           CardListView()
                 .tabItem {
                     Label("Cards", systemImage: "menucard")
                 }

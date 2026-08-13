@@ -11,15 +11,15 @@ import VisionKit
 struct CameraPreviewView: View {
     @State private var scannedImage: UIImage?
     @State private var isShowingScanner = false
+    let controller = CardController()
 
     var body: some View {
         VStack(spacing: 20) {
             if let image = scannedImage {
-                /*Image(uiImage: image)
+                Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxHeight: 400)*/
-                Card(image: image)
+                    .frame(maxHeight: 400)
             } else {
                 Text("No document scanned yet")
                     .foregroundColor(.gray)
@@ -35,3 +35,4 @@ struct CameraPreviewView: View {
         }
     }
 }
+

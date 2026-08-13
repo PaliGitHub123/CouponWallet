@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct CardsView: View {
+struct CardListView: View {
     
+    @State var cardList = CardController.getCardList()
     
     var body: some View {
         ScrollView(.vertical){
             VStack{
+                List(cardList){ item in
+                    CardController().getCard()
+                }
             }
         }
         
@@ -20,5 +24,5 @@ struct CardsView: View {
 }
 
 #Preview {
-    CardsView()
+    CardListView()
 }
